@@ -1,5 +1,5 @@
 /*
-	Program:	Gully Cricket App
+	Program:	Gully Cricket game
 	Author: 	Suraj Kadam
 */
 
