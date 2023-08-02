@@ -1,8 +1,6 @@
 /*
-	------ Module 3 Assignment Solution ------
-
 	Program:	Gully Cricket App
-	Author: 	Internshala
+	Author: 	Suraj Kadam
 */
 
 #include <iostream>
