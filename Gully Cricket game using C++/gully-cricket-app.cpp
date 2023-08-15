@@ -67,11 +67,11 @@ int main() {
 /* Greet users with a welcome message */
 void welcomeUsers() {
 
-    cout << "---------------------------------------" << endl;
-    cout << "|=========== GULLY CRICKET ===========|" << endl;
-    cout << "|                                     |" << endl;
-    cout << "|      Welcome to Gully Cricket       |" << endl;
-    cout << "---------------------------------------" << endl;
+    cout << "|------------------------------------------|" << endl;
+    cout << "|=========== GULLY CRICKET GAME ===========|" << endl;
+    cout << "|                                          |" << endl;
+    cout << "|      Welcome to Gully Cricket Game       |" << endl;
+    cout << "|------------------------------------------|" << endl;
 }
 
 /* Display all the players in both team A and team B */
@@ -83,9 +83,9 @@ void displayPlayers(string playersA[3], string playersB[3]) {
     cout << "Displaying players...\n";
     usleep(1000 * 1000);
 
-    cout << "--------------------------\t\t--------------------------" << endl;
+    cout << "|-------------------------\t\t-------------------------|" << endl;
     cout << "|=======  Team-A  =======|\t\t|=======  Team-B  =======|" << endl;
-    cout << "--------------------------\t\t--------------------------" << endl;
+    cout << "|-------------------------\t\t-------------------------|" << endl;
 
     for (int i = 0; i < 3; i++) {
         cout << "|\t";
@@ -94,7 +94,7 @@ void displayPlayers(string playersA[3], string playersB[3]) {
         cout << "[" << i << "] " << playersB[i] << "\t |";
         cout << endl;
     }
-    cout << "--------------------------\t\t--------------------------" << endl << endl;
+    cout << "|--------------------------\t\t--------------------------|" << endl << endl;
 }
 
 /* Select current batsman and bowler from batting team and bowler team respectively */
@@ -109,10 +109,10 @@ void selectBatsmanAndBowler(Team batTeam, Team bowlTeam) {
     currentBatsman = selectPlayer(batTeam.players);
     currentBowler = selectPlayer(bowlTeam.players);
 
-    cout << "----------------------------------------------------" << endl;
+    cout << "|----------------------------------------------------|" << endl;
     cout << "\t\t " << batTeam.name << ": Batsman - " << currentBatsman <<endl;
     cout << "\t\t " << bowlTeam.name << ": Bowler - " << currentBowler <<endl;
-    cout << "----------------------------------------------------" << endl << endl;
+    cout << "|----------------------------------------------------|" << endl << endl;
 }
 
 /* Select a player among the given players randomly */
@@ -168,15 +168,15 @@ int playInning() {
 /* Display runs scored by batting team in the inning */
 void displayScore(Team team) {
 
-    cout << "----------------------------------------------------" << endl;
+    cout << "|----------------------------------------------------|" << endl;
     cout << "\t\t " << team.name << " scored " << team.runs << " runs." << endl;
-    cout << "----------------------------------------------------" << endl << endl;
+    cout << "|----------------------------------------------------|" << endl << endl;
 }
 
 /* Decide winner by comparing final scores of both the teams */
 void decideWinner(int teamAScore, int teamBScore) {
 
-	cout << "----------------------------------------------------" << endl;
+	cout << "|----------------------------------------------------|" << endl;
 
     if (teamAScore > teamBScore) {
         cout << "\t\t Team A is the Winner" << endl;
