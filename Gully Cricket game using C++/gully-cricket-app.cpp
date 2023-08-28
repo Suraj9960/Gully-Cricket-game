@@ -1,6 +1,5 @@
 /*
 	Program:	Gully Cricket game
-	Author: 	Suraj Kadam
 */
 
 #include <iostream>
