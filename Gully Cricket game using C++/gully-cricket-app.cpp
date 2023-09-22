@@ -13,7 +13,7 @@ class Team {
 	public:
 		string name;
 		string players[3];
-		int runs;
+		int run;
 };
 
 void welcomeUsers();
